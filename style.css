@@ -21,6 +21,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    color:black;
 }
 
 .obal {
@@ -31,3 +32,204 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+
+
+
+
+
+
+
+
+
+
+.zahlavi{
+    margin:0;
+}
+.zahlavi li {
+    display:inline-block;
+    padding: 15px 20px 15px 20px;
+    
+}
+
+.zahlavi a {
+    text-decoration: none;
+    color:black;  
+}
+
+.zahlavi a:hover, .zahlavi a:focus {
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.upoutavac {
+    background-image: url(images/pozadi.jpg);
+    position:relative;
+}
+
+.mobil{
+    position:absolute;
+    bottom:-5px;
+    right:0;
+    margin:0;
+    padding:0;
+}
+
+.nadpis1{
+    width:550px;
+}
+.nadpis1 h1{
+    color: white;
+    font-weight: 500;
+    font-size: 94px;
+    margin: 0;
+    padding: 50px 0px 20px 30px;
+}
+
+.slogan{
+    color:white;
+    font-weight: 100;
+    font-size: 40px;
+    width:500px;
+    margin:0;
+    line-height: normal;
+    padding: 0 0 40px 30px;
+}
+
+.tlacitka{
+    display:inline-block;
+
+}
+.tlacitka a{
+    border: 2px solid white;
+    border-radius:10px;
+    color:white;
+    background-color:transparent;
+    text-decoration:none;
+    padding:15px;
+    margin: 0 0 40px 30px;
+    display: block;
+    float: left;
+}
+.tlacitka a:hover, .tlacitka a:focus {
+    background-color:#6c518f;
+}
+
+.stahnout {
+    margin:0 20px 40px 30px;
+}
+
+.vice {
+    margin:0 0 40px 0;
+}
+
+.obr img{
+    width:50px;
+    height:50px;
+    margin:20px 0 0 0;
+}
+
+.nadpis {
+    color:#5b3f80;
+    font-size: 20px;
+    margin: 10px 0 16px 0;
+}
+
+.box {
+    text-align: center;
+}
+
+.obr img {
+    text-align:center;
+}
+
+/*telefon*/
+@media only screen
+and (min-width : 320px)
+and (max-width : 899px) {
+    .spodek {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    
+    .box {
+        
+        text-align:center;
+        width:100%;
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 900px) {
+
+.spodek {
+    display: flex;
+    flex-wrap: no wrap;
+   
+}
+
+.box {
+    width: calc(100%/3);
+    display:block;
+    text-align:center;
+}
+
+}
+
+.zápatí {
+    background-color:#5b3f80;
+    color:white;
+    text-align:center;
+    height:30px;
+    font-size: 12px;
+    
+}
+
+.zápatí p {
+    margin:0;
+    padding: 6px;
+}
+
+/*telefon*/
+@media (min-width : 320px)
+and (max-width : 899px) {
+
+    .obal{
+        width:320px;
+    } 
+
+    .zahlavi {
+        padding:0 0 0 15px;
+    }
+
+    .nadpis1 {
+        width: 320px;
+    }
+    .nadpis1 h1 {
+        color: white;
+        font-weight: 300;
+        font-size: 34px;
+        margin: 0;
+        padding: 20px 0px 10px 20px;
+    }
+    .slogan {
+        color: white;
+        font-weight: 100;
+        font-size: 20px;
+        width: 320px;
+        margin: 0;
+        line-height: normal;
+        padding: 0 0 20px 20px;
+    }
+    .mobil img {
+        display:none;
+    }
+
+    .tlacitka a {
+        margin: 0 20px 20px 20px;
+    }
+
+
+}
